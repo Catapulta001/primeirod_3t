@@ -30,13 +30,17 @@ function total(){
     document.getElementById("valor").focus();
     return
   }
-
+let mes= ""
   for(let i = 1; i <= t; i++){
       r = c * (1 + (j/100));
-      document.write("Mês " + i + " valor: " + moeda(r) +"<br>");
+      document.getElementById("mes").innerHTML="mes"+ i +"valor" ;
+     // document.write("Mês " + i + " valor: " + moeda(r) +"<br>");
       c = r;
   }
-  document.write("Resultado: " + moeda(r));
+  document.getElementById("mes").innerHTML=mes;
+
+  document.getElementById("total").innerHTML="Total"+moeda (r);
+  //document.write("Resultado: " + moeda(r));
 }
 
 
